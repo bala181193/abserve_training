@@ -1,0 +1,271 @@
+ [ 
+ {
+    "sender": {
+        "userId":{
+            "$oid": "667126aa57d3e5cf59413bea"
+        },
+        "firstName": "gokul",
+        "lastName": "vigneesh",
+        "email": "gokul@gmail.com",
+        "phone": "9535437843",
+        "phoneCode": "91",
+        "address": "",
+        "country": "india",
+        "city": "madurai",
+        "pinCode": 625706,
+        "location": {
+            "pickUp": "silmapatti patti, Tamil Nadu 625706, India",
+            "drop": "p;;oachi, Tamil Nadu 625011, India",
+            "type": "Point",
+            "startCoords": [
+                78.0916,
+                11.8817
+               
+            ],               
+            "endCoords": [
+                 77.01093,
+                10.68253
+            ]
+        }
+    },
+    "parcel": {
+        "title": " mobile",
+        "description": "keep it safe",
+        "type": "Fragile",
+        "height": 12,
+        "width": 4,
+        "image": [
+            "public/temp/auth/Parcel/files-1718974009104",
+            "public/temp/auth/Parcel/files-1718974010159"
+        ],
+        "size": "3 KG - 10 KG",
+        "deliverBy": "Same Day Delivery",
+        "deliveryDate": {"$date":"2024-06-24T18:30:00.000Z"}  
+    },
+    "receiver": {
+        "firstName": "ayyal",
+        "lastName": "raj",
+        "email": "ayyal@gmai.com",
+        "phone": "8946545648",
+        "phoneCode": "91",
+        "address": "madurai"
+    },
+    "status": "Published",
+    "createdAt":{"$date":"2024-06-21T09:17:26.373Z"},
+    "updatedAt":{"$date":"2024-06-21T12:58:54.843Z"},
+    "__v": 9
+},
+{
+    "sender": {
+        "userId":{  "$oid": "667126aa57d3e5cf59413bea" },
+        "firstName": "gokul",
+        "lastName": "vigneesh",
+        "email": "gokul@gmail.com",
+        "phone": "8453415135",
+        "phoneCode": "91",
+        "address": "",
+        "country": "india",
+        "city": "madurai",
+        "pinCode": 625706,
+        "location": {
+            "pickUp": "Dindigul, Tamil Nadu, India",
+            "drop": "Tiruchirappalli, Tamil Nadu, India",
+            "type": "Point",
+            "startCoords": [   
+            77.96166,
+            10.40559
+            ],  
+            "endCoords": [
+                78.70049,
+                10.79975
+            ]
+        }
+    },
+    "parcel": {
+        "title": "mobile",
+        "description": "keep it safe",
+        "type": "Fragile",
+        "height": 12,
+        "width": 12,
+        "image": [
+            "3"
+        ],
+        "size": "3 KG - 10 KG",
+        "deliverBy": "Same Day Delivery",
+        "deliveryDate":{"$date":"2024-06-24T18:30:00.000Z"}
+    },
+    "receiver": {
+        "firstName": "ayyal",
+        "lastName": "raj",
+        "email": "ayyal@gmai.com",
+        "phone": "9534548435",
+        "phoneCode": "91",
+        "address": "trichy"
+    },
+    "status": "Published",
+    "createdAt":{"$date":"2024-06-21T10:55:08.160Z"},
+    "updatedAt":{"$date":"2024-06-21T12:25:05.507Z"},
+    "__v": 2
+},
+{
+    "sender": {
+        "userId":{"$oid": "667126aa57d3e5cf59413bea" },
+        "firstName": "gokul",
+        "lastName": "vigneesh",
+        "email": "gokul@gmail.com",
+        "phone": "5767246261",
+        "phoneCode": "91",
+        "address": "",
+        "country": "india",
+        "city": "chennai",
+        "pinCode": 624852,
+        "location": {
+            "pickUp": "trichi, Tamil Nadu, India",
+            "drop": "dindukal, Tamil Nadu, India",           
+            "type": "Point",
+            "startCoords": [
+                78.70049,
+                10.79975                
+            ],
+            "endCoords": [
+                77.96166,
+                10.40559
+               
+            ]
+        }
+    },
+    "parcel": {
+        "title": "food",
+        "description": "keep it safe",
+        "type": "Food Parcel",
+        "height": 12,
+        "width": 12,
+        "image": [
+            "public/temp/auth/Parcel/files-1718968757672"
+        ],
+        "size": "> 10 KG",
+        "deliverBy": "Same Day Delivery",
+        "deliveryDate":{"$date":"2024-06-26T18:30:00.000Z"}
+    },
+    "receiver": {
+        "firstName": "ayyal",
+        "lastName": "raj",
+        "email": "ayyal@gmai.com",
+        "phone": "9346514345",
+        "phoneCode": "91",
+        "address": "madurai"
+    },
+    "status": "Published",
+    "createdAt":{"$date":"2024-06-21T11:00:21.658Z"},
+    "updatedAt":{"$date":"2024-06-21T11:19:17.719Z"},
+    "__v": 2
+},
+{
+    "sender": {
+        "userId":{"$oid": "667126aa57d3e5cf59413bea" },
+        "firstName": "ayyan",
+        "lastName": "kalai",
+        "email": "ayyan@gmail.com",
+        "phone": "9632587412",
+        "phoneCode": "91",
+        "address": "",
+        "country": "india",
+        "city": "madurai",
+        "pinCode": 624852,
+        "location": {
+            "pickUp": "Madurai, Tamil Nadu, India",
+            "drop": "Natham",
+            "type": "Point",    
+            "startCoords": [
+                78.1197754,
+                9.9252007
+            ],
+            "endCoords": [  
+            78.22397,
+            10.23612
+            ]
+        }
+    },
+    "parcel": {
+        "title": "mobile,tablet,laptop,earspods",
+        "description": "keep it safe",
+        "type": "Fragile",
+        "height": 12,
+        "width": 12,
+        "image": [
+            "public/temp/auth/Parcel/files-1718969104682"
+        ],
+        "size": "3 KG - 10 KG",
+        "deliverBy": "Same Day Delivery",
+        "deliveryDate":{"$date":"2024-06-24T18:30:00.000Z"}
+    },
+    "receiver": {
+        "firstName": "ayyal",
+        "lastName": "raj",
+        "email": "ayyal@gmai.com",
+        "phone": "9843541021",
+        "phoneCode": "91",
+        "address": "4419 Locust Court"
+    },
+    "status": "Published",
+    "createdAt":{"$date":"2024-06-21T11:21:19.968Z"},
+    "updatedAt":{"$date":"2024-06-24T05:32:54.876Z"},
+    "__v": 0
+},
+{
+    "sender": {
+        "userId":{"$oid": "667126aa57d3e5cf59413bea" },
+        "firstName": "gokul",
+        "lastName": "vigneesh",
+        "email": "gokul@gmail.com",
+        "phone": "9431245435",
+        "phoneCode": "91",
+        "address": "",
+        "country": "india",
+        "city": "madurai",
+        "pinCode": 625706,  
+        "location": {
+            "pickUp": "Chennai, Tamil Nadu, India",
+            "drop": "Tiruvannamalai, Tamil Nadu, India",  
+           
+            "type": "Point",
+            "startCoords": [
+                80.2704622,
+                13.0843007
+            ],
+            "endCoords": [
+                79.07469569999999,
+                12.2252841
+            ]
+        }
+        
+    },
+    "parcel": {
+        "title": "mobile",
+        "description": "keep it safe",
+        "type": "Fragile",
+        "height": 12,
+        "width": 4,
+        "image": [
+            "public/temp/auth/Parcel/files-1719205016590",
+            "public/temp/auth/Parcel/files-1719206041072",
+            "public/temp/auth/Parcel/files-1719206881770"
+        ],
+        "size": "3 KG - 10 KG",
+        "deliverBy": "Same Day Delivery",
+        "deliveryDate":{"$date":"2024-06-23T05:28:01.902Z"}
+    },
+    "receiver": {
+        "firstName": "ayyal",
+        "lastName": "raj",
+        "email": "ayyal@gmai.com",
+        "phone": "9543212465",
+        "phoneCode": "91",
+        "address": "4419 Locust Court"
+    },
+    "status": "Published",
+    "createdAt":{"$date":"2024-06-24T04:55:32.728Z"},
+    "updatedAt":{"$date":"2024-06-24T05:28:01.902Z"},
+    "__v": 2
+}
+ ]
