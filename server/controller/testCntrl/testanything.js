@@ -17,11 +17,35 @@ export const  sample=async()=>{
   // Write to file
 try {
     await fs.writeFileSync(filePath, fileContent,"utf8");
-    return
     console.log('File written successfully');
   } catch (err) {
     console.error('Error writing file:', err);
   }
 }
-sample()
+// sample()
+
+
+// const text = `
+// This is the first line.
+// Here is a line with a pattern.
+// Another line without the pattern.
+// Pattern can be anywhere.
+// `;
+
+// const regex = /.*pattern.*/i; // Case-insensitive
+// const matches = text.split('\n').filter(line => regex.test(line));
+// console.log(matches)
+
+// const filePath = '/some/directory/filename.ext';
+
+// // Get the base name of the file (filename with extension)
+// const fileNameWithExt = path.basename(filePath); // 'filename.ext'
+
+// // Get the extension of the file
+// const extName = path.extname(filePath); // '.ext'
+
+// // Remove the extension from the filename
+// const fileNameWithoutExt = fileNameWithExt.slice(2, extName.length);
+
+// console.log(fileNameWithoutExt); // Output: 'filename'
 

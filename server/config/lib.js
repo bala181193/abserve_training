@@ -7,3 +7,15 @@ export const generatePassword=(password)=>{
     console.log(salt,hash)
     return hash
   }
+
+  export const comparePassword = async (password, hash) => {
+    try {
+        console.log(password, hash)
+        const checkPassword = bcrypt.compare(password, hash);
+        return checkPassword
+    } catch (err) {
+        console.log(err)
+        return false
+
+    }
+}

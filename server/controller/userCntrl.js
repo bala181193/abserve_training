@@ -1,12 +1,18 @@
 import fs from "fs";
 import Ajv from "ajv"
 import path from "path";
+import multer from 'multer';
+import passport from "passport";
 import * as formidable from "formidable";
 import { User } from "../models";
-import {generatePassword} from '../config/config'
+import {generatePassword} from '../config/lib'
 import {Users} from '../controller/filterCntrl'
 const jwt = require('jsonwebtoken');
 
+// const uploadDir = path.join(__dirname, 'public/image');
+// if (!fs.existsSync(uploadDir)) {
+//   fs.mkdirSync(uploadDir, { recursive: true });
+// }
 export const fileUpload = async (req, res, next) => {
   try {
     const form = new formidable.IncomingForm();
@@ -73,7 +79,29 @@ export const register = async (req, res) => {
     return res.status(500).json({ msg: "error on server" });
   }
 };
+export const localPassportAuthLogin=passport.authenticate('local', {
+  successRedirect: '/authorise',
+  failureRedirect: '/localPassportAuthLogin'
+})
+export const authorise=(req,res,next)=>{
+  if (req.isAuthenticated()) {
+    return next();
+  }
+  res.redirect('/localPassportAuthLogin');
+}
+export const unAuthorise=(req,res)=>{
+  console.log(req);
+  res.status(401).json({messsage:"unAuthorised user"})
+}
 
+export const getUserDetails=async(req,res)=>{
+  try{
+    const userData=await User.find({})
+    res.status(200).json({userData})
+  }catch(err){
+    res.status(200).json({err:err})
+  }
+}
 
 
 

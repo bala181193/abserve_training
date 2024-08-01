@@ -63,6 +63,39 @@ export const saveCsvUpload = async (req, res) => {
   }
 };
 
+//multer storage in memory
+const productBulkUpload=async(req, res)=>{
+  let response = {
+    status: false,
+    message: "BAD_REQUEST",
+    data: {},
+    statusCode: 400,
+  }
+  try{
+    console.log(req.file,req.files);
+    let reqFile=req.file
+    const workbook = xlsx.read(reqFile.buffer, { type: 'buffer' });
+    const sheetName = workbook.SheetNames[0];
+    const sheet = workbook.Sheets[sheetName];
+    const jsonData = xlsx.utils.sheet_to_json(sheet);
+    return  res.status(200).json(jsonData);
+
+    //without memory stoeage
+    // const workbook = xlsx.readFile('./Quiz_Question.xlsx');  // Step 2
+    // let workbook_sheet = workbook.SheetNames;                // Step 3
+    // let workbook_response = xlsx.utils.sheet_to_json(        // Step 4
+    //   workbook.Sheets[workbook_sheet[0]]
+    // );
+    // res.status(200).send({                                   // Step 5
+    //   message: workbook_response,
+    // });
+  }catch(error){
+    response.status = false;
+    response.message = error.message || response.message;
+    response.statusCode = error.statusCode || response.statusCode;
+  }
+  return res.status(response.statusCode || 500).json(response).end();
+}
 // checkfuntion();
 
 const sendEmail = async () => {

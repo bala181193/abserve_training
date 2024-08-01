@@ -6,5 +6,5 @@ let router = express.Router();
 router
   .route("/register")
   .post(userCntrl.fileUpload, userValid.register,userCntrl.register);
-
+  
 export default router;

@@ -1,0 +1,7 @@
+{
+    "watch": [
+        "."
+    ],
+    "ext": "js,mjs",
+    "exec": "babel-node index.js"
+}
